@@ -2,6 +2,7 @@
 let aobject= {
     firstname:"Anuja",
     lastname:"Hinge",
+    occupation:{name:"web developer"},
 };
 console.log(aobject);
 
@@ -45,3 +46,38 @@ let obj1 ={ name:"anuja"};
 let obj2={  age:21};
 let obj3={ ...obj1,...obj2};
 console.log(obj3);
+console.log(Object.assign(obj1,obj2));
+
+
+// console.log(aobject.occupation.name);
+// //display keys
+
+
+// console.log(Object.keys(aobject));
+
+// //display values
+// console.log(Object.values(aobject));
+// //display both
+
+
+
+
+const customObject = {
+    firstname: "anuja",
+    lastname: "hinge",
+    fullname: function() {
+        return this.firstname + " " + this.lastname;
+    }
+};
+
+
+console.log(customObject.fullname());
+
+
+const you={
+    name:"Mosh",
+    talk:function(){
+        console.log(this);
+    },
+};
+you.talk();
